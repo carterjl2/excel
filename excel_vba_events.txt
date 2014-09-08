@@ -1,0 +1,17 @@
+Worksheet_Activate() 	Wywoływana w momencie uaktywnienia arkusza.
+
+Worksheet_BeforeDoubleClick(ByVal Target As Excel.Range, Cancel As Boolean) 	Uruchamiana jest gdy użytkownik kliknie dwa razy na obszar arkusza. Argumentami tej procedury są Target i Cancel. Zmienna obiektowa Target reprezentuje klikniętą komórkę. Argument Cancel przekazuje informacje o anulowaniu zdarzenia. Jeżeli w procedurze nadasz parametrowi Cancel wartość True dalsze akcje związane z dwukrotnym kliknięciem nie będą wykonywane.
+
+Worksheet_BeforeRightClick(ByVal Target As Excel.Range, Cancel As Boolean) 	Procedura uruchamiana jest gdy użytkownik kliknie prawym przyciskiem myszy na obszar arkusza. Argumentami tej procedury są Target i Cancel. Zmienna obiektowa Target reprezentuje klikniętą komórkę. Jeżeli w procedurze nadasz parametrowi Cancel wartość True dalsze akcje związane z kliknięciem prawym przyciskiem myszy są anulowane.
+
+Worksheet_Calculate() 	Procedura wywoływana po przeliczeniu arkusza.
+
+Worksheet_Change(ByVal Target As Excel.Range) 	Procedura wywołana po zmianie zawartości dowolnej komórki arkusza. Procedura nie działa po zmianie spowodowanej przeliczeniem arkusza. Zmienna obiektowa Target reprezentuje komórkę w której dokonano zmiany.
+
+Worksheet_Deactivate() 	Uruchamiana gdy bieżący arkusz przestaje być aktywny, na przykład wtedy gdy użytkownik uaktywni inny arkusz.
+
+Worksheet_FollowHyperlink(ByVal Target As Hyperlink) 	Procedura wywoływana gdy użytkownik kliknie na link (hiperłącze) umieszczony na arkuszu. Argument Target to adres wskazany przez link. W starszych wersjach Excela procedura ta nie jest dostępna.
+
+Worksheet_PivotTableUpdate(ByVal Target As PivotTable) 	Procedura wykonywana jest po aktualizacji tabeli przestawnej. Zmienna obiektowa Target reprezentuje aktualizowany raport tabeli. W starszych wersjach Excela procedura ta nie jest dostępna.
+
+Worksheet_SelectionChange(ByVal Target As Excel.Range) 	Uruchamiana gdy zmieniamy obszar zaznaczenia na arkuszu (na przykład gdy przechodzimy do innej komórki). Zmienna obiektowa Target reprezentuj zaznaczoną komórkę lub zakres komórek. Jest to domyślna procedura dla arkusza.
